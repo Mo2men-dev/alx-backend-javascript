@@ -10,7 +10,7 @@ export default function getResponseFromAPI(promise) {
       body: 'success',
     }))
     .catch(
-      () => new Error('The fake API is not working currently'),
+      () => new Error(),
     ).finally(
       () => console.log('Got a response from the API'),
     );
